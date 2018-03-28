@@ -1,0 +1,29 @@
+﻿<Window x:Class="Uno.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Uno"
+        mc:Ignorable="d"
+        Title="Uno lmao" Height="300" Width="400" ResizeMode="NoResize">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="Margin" Value="10"></Setter>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="Margin" Value="30,10"></Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Uh hit this to start it lmao"></TextBlock>
+            <Button x:Name="startRPCButton" Content="START RPC" Click="startRPCButton_Click"></Button>
+            <TextBlock Text="Stop broadcasting Uno (doesn't always work)"></TextBlock>
+            <Button x:Name="stopRPCButton" Content="STOP RPC" Click="stopRPCButton_Click"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
